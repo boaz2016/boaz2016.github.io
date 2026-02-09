@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*zegt welke afbeelding en wat naam er van is en dat niet herhaalt moet worden en ook volledige scherm moet bedekken*/
+        body {
+            background: url(zand.jpg);
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        }
+        
+        /*zegt achtergrond moet overgaan lichtgroen lichtblue etc, ook staat padding en ook hoogte en breedte*/
+        h1 {
+            background-image:linear-gradient(to right,lightgreen,lightblue,lightyellow,lightpink,lightgrey);
+            border: solid 1px;
+            border-radius: 15px;
+            height: 40px;
+            width:400px;
+            padding:10px;
+        }
+        /*beschrijft hoogte padding in tekst wordt gecentreerd*/
+        h2{
+            height:30px;
+            width:150px;
+            padding:5px;
+            text-align:center;
+            
+            
+        }
+        /*wat standaard voor tekst moet staan*/
+        h2::before {
+            content: " --- "
+        } /*wat er na moet komen*/
+            h2::after {
+                content: " --- "
+            }
+            /*kleur oranje border 1px ook oranje en ook dat shaduw geeft oranje*/
+        #zon {
+            color: orange;
+            border:  1px,  solid orange;
+            box-shadow: 5px 5px 5px orange;
+
+        }
+        /*het zeldfe allleen de kleur*/
+        #zee {
+            color: blue;
+            border: 1px, solid blue;
+            box-shadow: 5px 5px 5px blue;
+        }
+        /*het zeldfe allleen de kleur*/
+
+        #strand {
+            color: brown;
+            border: 1px, solid brown;
+            box-shadow: 5px 5px 5px brown;
+        }
+        /*de kleur grijs voor 2 paragrafen */
+        .paragrafenzon{
+            color:grey;
+           
+            
+
+
+        }
+        /*grijs breedte 300px en padding voor boven links rechts onder*/
+        .randzon {
+            color: grey;
+            width: 300px;
+            border: dashed 1px;
+            padding-top: 3px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /*grijs breedte 300px en padding voor boven links rechts onder*/
+
+        .zeerand {
+            color: grey;
+            width: 300px;
+            border: dashed 1px;
+            padding-top: 3px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /*wordt tekst blauw als je over gaat*/
+        .blauwhover:hover{
+            color:blue;
+        }
+        /*verandert rand als je over gaat*/
+        .randzon:hover {
+            border: 1px, dashed orange;
+        }
+        /*verandert rand als je over gaat*/
+
+        .zeerand:hover {
+            border: 1px, dashed blue;
+        }
+        /*grijs breedte 300px en padding voor boven links rechts onder*/
+
+        .strandrand {
+            color: grey;
+            width: 300px;
+            border: dashed 1px;
+            padding-top: 3px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px, dashed;
+        }
+        /*wordt tekst bruin als je over gaat*/
+
+            .brownhover:hover {
+                color: brown;
+                
+            }
+        /*wordt tekst bruin als je over gaat*/
+
+
+            .strandrand:hover {
+                border: 1px, dashed brown;
+            }
+ /*als je over een paragraaf gaat.*/
+        .brownhoverp2:hover {
+            color: brown;
+        }
+        .blauwhoverp2:hover{
+            color:blue;
+        }
+        .oranjehoverp2:hover{
+            color:orange;
+        }
+        .oranjehover:hover{
+            color:orange;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Strandreizen - In 't zunnetje'</h1>
+    <h2 id="zon">zon</h2>
+    <div class="randzon"> <!--div element dat je moet gebruiken-->
+        <p class="oranjehover">De zon heeft een oranje kleur.</p>
+        <p class="oranjehoverp2">Daarom verandert de kleur van de rand en paragraaf in het oranje als je er met de muis over gaat.</p>
+    </div>
+
+    <h2 id="zee">zee</h2>
+    <div class="zeerand"> <!--id zoals gevraagd-->
+        <p class="blauwhover">De zee heeft een blauwe kleur.</p>
+        <p class="blauwhoverp2">Daarom verandert de kleur van de rand en paragraaf in het blauw als je er met de muis over gaat. </p>
+    </div>
+    <h2 id="strand">strand</h2 >
+    <div class="strandrand"> <!--class gebruikt zoals gevraagd-->
+        <p class="brownhover">Het strand heeft een bruine kleur.</p>
+        <p class="brownhoverp2">Daarom verandert de kleur van de rand en de paragraaf in het bruin als je er met de muis over gaat.</p>
+    </div>
+</body>
+</html>
